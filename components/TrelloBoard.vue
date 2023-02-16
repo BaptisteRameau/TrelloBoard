@@ -11,7 +11,9 @@
                     <draggable v-model="column.tasks" :group="{ name: 'tasks', pull: alt ? 'clone' : true }" item-key="id"
                         handle=".drag-handle" :animation="150">
                         <template #item="{ element: task }: { element: Task }">
-                            <TrelloBoardTask :task="task" />
+                            <div>
+                                <TrelloBoardTask :task="task" />
+                            </div>
                         </template>
                     </draggable>
 
