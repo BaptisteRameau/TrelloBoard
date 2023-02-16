@@ -1,9 +1,11 @@
 <template>
     <div>
-        <draggable v-model="columns" group="columns" item-key="id" class="flex gap-4 overflow-x-auto items-start">
+        <draggable v-model="columns" group="columns" item-key="id" :animation="150" handle=".drag-handle"
+            class="flex gap-4 overflow-x-auto items-start">
             <template #item="{ element: column }: { element: Column }">
                 <div class="column bg-gray-300 p-5 rounded min-width-[250px]">
                     <header class="font-bold mb-4">
+                        <DragHandle />
                         {{ column.title }}
                     </header>
                     <TrelloBoardTask v-for="task in column.tasks" :task="task" />
