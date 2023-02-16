@@ -1,6 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# TrelloBoard
 
 ## Setup
 
@@ -12,9 +10,6 @@ yarn install
 
 # npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -25,18 +20,19 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+## Features
 
-Build the application for production:
+- Create Column
+- Edit Column
+- Delete Column
+- Create Task
+- Delete Task
+- Drag Columns
+- Drag Tasks through other tasks and between themselves
 
-```bash
-npm run build
-```
 
-Locally preview production build:
+## Screenshots
 
-```bash
-npm run preview
-```
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/67638790/219447709-1cc7d4fd-a86f-4b32-9c72-61bc00b49a8f.png">
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
